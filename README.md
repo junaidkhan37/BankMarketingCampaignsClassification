@@ -56,9 +56,9 @@ Model Comparison & Selection
 
 
 
+
+
 Models Implemented
-
-
 
 
 Baseline Model
@@ -68,6 +68,7 @@ Baseline Model
 Logistic Regression
 Class-weighted to address class imbalance
 Serves as a performance benchmark
+
 
 
 Advanced Models
@@ -95,7 +96,10 @@ All models use a consistent preprocessing pipeline to ensure fair comparison.
 
 
 
+
+
 Evaluation Metrics
+
 
 
 
@@ -119,9 +123,12 @@ Visual diagnostics include:
 
 
 
+
 ROC curves (individual and combined)
 Confusion matrices
 Bar charts for ROC-AUC and training time comparison
+
+
 
 
 
@@ -149,18 +156,18 @@ Model	                              Train Time (s) Train Accuracy  Test Accuracy
 
 Results Summary
 
-Model	                          Strengths	           Limitations
+Model	                          Strengths	             Limitations
 
-Logistic Regression	Fast, stable, interpretable	 Limited non-linearity
-
-
-KNN	                Flexible decision boundaries	 Sensitive to scaling and k
+Logistic Regression	  Fast, stable, interpretable	  Limited non-linearity
 
 
-Decision Tree	        Highly interpretable	          Prone to overfitting
+KNN	                 Flexible decision boundaries	  Sensitive to scaling and k
 
 
-SVM	             Best generalization, strong ROC-AUC   High computational cost
+Decision Tree	         Highly interpretable	         Prone to overfitting
+
+
+SVM	              Best generalization, strong ROC-AUC  High computational cost
 
 
 
