@@ -86,9 +86,14 @@ Model Performance Comparison
 
 
 Model	Train Time (s)	Train Accuracy	Test Accuracy	Precision	Recall	F1-score	ROC-AUC
+
+
 0	Logistic Regression (Baseline)	NaN	NaN	NaN	0.451200	0.911638	0.603639	0.943838
+
 2	Decision Tree	27.340505	0.847587	0.845836	0.415680	0.908405	0.570365	0.938863
+
 3	SVM (RBF Kernel - Subsampled)	80.879697	0.844800	0.845958	0.418460	0.942888	0.579662	0.938358
+
 1	KNN	10.932382	0.939727	0.898519	0.564426	0.434267	0.490865	0.835175
 
 
@@ -96,9 +101,13 @@ Model	Train Time (s)	Train Accuracy	Test Accuracy	Precision	Recall	F1-score	ROC-
 Results Summary
 
 Model	Strengths	Limitations
+
 Logistic Regression	Fast, stable, interpretable	Limited non-linearity
+
 KNN	Flexible decision boundaries	Sensitive to scaling and k
+
 Decision Tree	Highly interpretable	Prone to overfitting
+
 SVM	Best generalization, strong ROC-AUC	High computational cost
 
 
@@ -106,8 +115,11 @@ SVM	Best generalization, strong ROC-AUC	High computational cost
 Highlights:
 
 Best ROC-AUC & F1-score: Logistic Regression (Baseline)
+
 Best Recall: SVM (RBF Kernel)
+
 Best Precision & Accuracy: KNN
+
 Fastest Training: KNN and Decision Tree
 
 
