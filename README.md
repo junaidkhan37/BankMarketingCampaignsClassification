@@ -14,7 +14,9 @@ Dataset
 
 Source: UCI Machine Learning Repository – Bank Marketing Dataset
 
+
 Dataset Used: bank-additional-full.csv
+
 
 Number of records: 41,188
 Number of features: 20 input variables
@@ -112,16 +114,16 @@ Bar charts for ROC-AUC and training time comparison
 Model Performance Comparison
 
 
-Model	                          Train Time (s)	Train Accuracy	Test Accuracy	 Precision	 Recall	  F1-score	 ROC-AUC
+
+Model	Train Time (s)	Train Accuracy	Test Accuracy	Precision	Recall	F1-score	ROC-AUC
+0	Logistic Regression (Baseline)	NaN	NaN	NaN	0.451200	0.911638	0.603639	0.943838
+2	Decision Tree	27.340505	0.847587	0.845836	0.415680	0.908405	0.570365	0.938863
+3	SVM (RBF Kernel - Subsampled)	80.879697	0.844800	0.845958	0.418460	0.942888	0.579662	0.938358
+1	KNN	10.932382	0.939727	0.898519	0.564426	0.434267	0.490865	0.835175
 
 
-0	Logistic Regression (Baseline)	NaN	            NaN	              NaN	      0.451200    0.911638  0.603639	 0.943838
 
-2	Decision Tree	                27.340505	      0.847587	       0.845836	    0.415680	  0.908405	0.570365	 0.938863
 
-3	SVM (RBF Kernel - Subsampled)	80.879697	      0.844800	       0.845958	    0.418460	  0.942888	0.579662	 0.938358
-
-1	KNN	                          10.932382	      0.939727	       0.898519	    0.564426	  0.434267	0.490865	0.835175
 
 
 
