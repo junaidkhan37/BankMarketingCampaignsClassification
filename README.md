@@ -1,9 +1,13 @@
 Bank Marketing Campaigns Classification
 
+
+
 Overview
 
 This project analyzes data from a Portuguese banking institution’s direct marketing campaigns to predict whether a client will subscribe to a term deposit. Multiple machine learning models are developed, evaluated, and compared to identify the most effective approach for this classification task.
 The dataset contains client demographic information, campaign interaction details, and macroeconomic indicators. The primary objective is to accurately predict the target variable y, which indicates whether a client subscribed to a term deposit (yes or no).
+
+
 
 
 Dataset
@@ -17,6 +21,8 @@ Number of features: 20 input variables
 Target variable: y (binary: yes / no)
 Time period: May 2008 – November 2010
 The dataset includes categorical, numerical, and binary features. Several variables contain "unknown" values, which are handled during preprocessing.
+
+
 
 
 Methodology
@@ -44,26 +50,42 @@ Confusion matrices and ROC curves
 Model Comparison & Selection
 
 
+
+
 Models Implemented
 
+
 Baseline Model
+
 
 Logistic Regression
 Class-weighted to address class imbalance
 Serves as a performance benchmark
+
+
 Advanced Models
+
 
 K-Nearest Neighbors (KNN)
 Distance-based non-parametric classifier
+
 Decision Tree
 Interpretable model with depth and leaf constraints
+
+
 Support Vector Machine (SVM)
 RBF kernel
 Margin-based optimization
+
+
+
+
 All models use a consistent preprocessing pipeline to ensure fair comparison.
 
 
+
 Evaluation Metrics
+
 
 To properly evaluate performance under class imbalance, multiple metrics were tracked:
 
@@ -74,7 +96,11 @@ Precision
 Recall
 F1-score
 ROC-AUC
+
+
+
 Visual diagnostics include:
+
 
 ROC curves (individual and combined)
 Confusion matrices
@@ -82,19 +108,20 @@ Bar charts for ROC-AUC and training time comparison
 
 
 
+
 Model Performance Comparison
 
 
-Model	Train Time (s)	Train Accuracy	Test Accuracy	Precision	Recall	F1-score	ROC-AUC
+Model	                          Train Time (s)	Train Accuracy	Test Accuracy	 Precision	 Recall	  F1-score	 ROC-AUC
 
 
-0	Logistic Regression (Baseline)	NaN	NaN	NaN	0.451200	0.911638	0.603639	0.943838
+0	Logistic Regression (Baseline)	NaN	            NaN	              NaN	      0.451200    0.911638  0.603639	 0.943838
 
-2	Decision Tree	27.340505	0.847587	0.845836	0.415680	0.908405	0.570365	0.938863
+2	Decision Tree	                27.340505	      0.847587	       0.845836	    0.415680	  0.908405	0.570365	 0.938863
 
-3	SVM (RBF Kernel - Subsampled)	80.879697	0.844800	0.845958	0.418460	0.942888	0.579662	0.938358
+3	SVM (RBF Kernel - Subsampled)	80.879697	      0.844800	       0.845958	    0.418460	  0.942888	0.579662	 0.938358
 
-1	KNN	10.932382	0.939727	0.898519	0.564426	0.434267	0.490865	0.835175
+1	KNN	                          10.932382	      0.939727	       0.898519	    0.564426	  0.434267	0.490865	0.835175
 
 
 
@@ -104,9 +131,12 @@ Model	Strengths	Limitations
 
 Logistic Regression	Fast, stable, interpretable	Limited non-linearity
 
+
 KNN	Flexible decision boundaries	Sensitive to scaling and k
 
+
 Decision Tree	Highly interpretable	Prone to overfitting
+
 
 SVM	Best generalization, strong ROC-AUC	High computational cost
 
